@@ -1,2 +1,2 @@
 # peccole-nevada
-Custom Theme for WordPress
+Custom Theme for Peccole Nevada Company.
