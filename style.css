@@ -1,0 +1,11 @@
+/*
+Theme Name: Child theme of Primobiz
+Theme URI: http://legentpt.com/
+Description: This is a custom child theme for Legend Health Care Physical Therapy
+Author: Primo Motif ad & design agency
+Author URI: http://primomotif.com
+Template: primobiz
+Version: 0.1
+*/
+
+@import url("../primobiz/style.css");
