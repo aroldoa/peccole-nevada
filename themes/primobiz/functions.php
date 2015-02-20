@@ -131,20 +131,6 @@ function html5blank_header_scripts()
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
 
-        wp_register_script( 'gmap_api', 'http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7', array(), '', true );
-        wp_enqueue_script('gmap_api'); // Enqueue it!
-
-        wp_register_script( 'maplace', get_template_directory_uri() . '/js/lib/maplace-0.1.3.min.js', array(), '1.2.0', true );
-        wp_enqueue_script('maplace'); // Enqueue it!
-
-        wp_register_script( 'legend_pt_map', get_template_directory_uri() . '/js/lib/legend_pt_map.js', array(), '1.2.0', true );
-        wp_enqueue_script('legend_pt_map'); // Enqueue it!
-
-        wp_enqueue_script('jquery-cookie', get_template_directory_uri() . '/js/lib/jquery.cookie.js', array(), '1.0.0', true);
-        wp_enqueue_script('jquery-cookie'); // Enqueue it!
-
-        wp_enqueue_script('text_resize', get_template_directory_uri() . '/js/lib/text_resize.js', array(), '1.0.0', true);
-        wp_enqueue_script('text_resize'); // Enqueue it!
     }
 }
 
@@ -166,8 +152,8 @@ function html5blank_styles()
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
 
-    wp_register_style('boots', get_template_directory_uri() . '/css/bootstrap.css', array(), '1.0', 'all');
-    wp_enqueue_style('boots'); // Enqueue it!
+    wp_register_style('bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1.0', 'all');
+    wp_enqueue_style('bootstrap_css'); // Enqueue it!
 
     wp_register_style('icons', get_template_directory_uri() . '/css/flaticon.css', array(), '1.0', 'all');
     wp_enqueue_style('icons'); // Enqueue it!
@@ -389,7 +375,8 @@ function html5_blank_view_article($more)
 // Remove Admin bar
 function remove_admin_bar()
 {
-    return false;
+    // return false;
+    return true;
 }
 
 // Remove 'text/css' from our enqueued stylesheet
@@ -530,45 +517,6 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 	Custom Post Types
 \*------------------------------------*/
 
-// Create 1 Custom Post type for Testimonials
-function create_post_type_testimonials()
-{
-    register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'html5-blank');
-    register_post_type('testimonials', // Register Custom Post Type
-        array(
-        'labels' => array(
-            'name' => __('Testimonials', 'html5blank'), // Rename these to suit
-            'singular_name' => __('Testimonial', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New Testimonial', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit Testimonial', 'html5blank'),
-            'new_item' => __('New Testimonial', 'html5blank'),
-            'view' => __('View Testimonial', 'html5blank'),
-            'view_item' => __('View Testimonial', 'html5blank'),
-            'search_items' => __('Search Testimonial', 'html5blank'),
-            'not_found' => __('No Testimonial found', 'html5blank'),
-            'not_found_in_trash' => __('No Testimonial found in Trash', 'html5blank')
-        ),
-        'public' => true,
-        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
-        'has_archive' => true,
-        'supports' => array(
-            'title',
-            'editor',
-            'excerpt',
-            'thumbnail'
-        ), // Go to Dashboard Custom HTML5 Blank post for supports
-        'can_export' => true, // Allows export in Tools > Export
-        'taxonomies' => array(
-            'post_tag',
-            'category'
-        ) // Add Category and Post Tags support
-    ));
-}
-
-
 // Create 1 Custom Post type for locations
 function create_post_type_locations()
 {
@@ -607,43 +555,6 @@ function create_post_type_locations()
     ));
 }
 
-// Create 1 Custom Post type for Services
-function create_post_type_services()
-{
-    register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'html5-blank');
-    register_post_type('services', // Register Custom Post Type
-        array(
-        'labels' => array(
-            'name' => __('Services', 'html5blank'), // Rename these to suit
-            'singular_name' => __('Service', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New Service', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit Service', 'html5blank'),
-            'new_item' => __('New Service', 'html5blank'),
-            'view' => __('View Service', 'html5blank'),
-            'view_item' => __('View Service', 'html5blank'),
-            'search_items' => __('Search Service', 'html5blank'),
-            'not_found' => __('No Service found', 'html5blank'),
-            'not_found_in_trash' => __('No Service found in Trash', 'html5blank')
-        ),
-        'public' => true,
-        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
-        'has_archive' => true,
-        'supports' => array(
-            'title',
-            'editor',
-            'excerpt',
-            'thumbnail'
-        ), // Go to Dashboard Custom HTML5 Blank post for supports
-        'can_export' => true, // Allows export in Tools > Export
-        'taxonomies' => array(
-            'post_tag',
-            'category'
-        ) // Add Category and Post Tags support
-    ));
-}
 
 /* ----------------------------------- *\
 	Enable excerpt for pages
