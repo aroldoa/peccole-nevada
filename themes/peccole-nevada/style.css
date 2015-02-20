@@ -9,4 +9,38 @@ Version: 0.1
 */
 
 @import url("../primobiz/style.css");
-body{background-color: black;}
+
+/* 
+
+Class Table of Contents
+
+1. Global Elements
+2. Header Elements
+3. Navigation Elements
+4. Structure Elements
+
+*/
+
+/*
+1. Global Elements
+*/
+
+/*
+2. Header Elements
+*/
+
+/*
+3. Navigation Elements
+*/
+
+/*----------------------------------
+4. Structure Elements
+-----------------------------------*/
+
+.intro{text-align: center; padding:80px 30px;}
+.intro pre{margin: 0px; padding-top: 0px; background: none; border:none;}
+.intro h1{margin: 0px 0px 45px 0px; padding-top: 0px;}
+.intro p{line-height: 28px;}
+ul#owl-slider-wrapper{list-style-type: none; margin: 0px; padding: 0px;}
+ul#owl-slider-wrapper li{padding-top: 40px;}
+
