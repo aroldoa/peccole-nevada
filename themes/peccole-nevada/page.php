@@ -3,8 +3,7 @@
 <?php
 if ( is_front_page() ) {
     // This is to display the slider
-    //. putRevSlider("home") .
-	echo '<section class="band showcase">'  '</section>';
+	echo '<section class="band showcase"></section>';
 } else {
     // This is not the home page
 	echo '<section class="band intro"><div style="background-image:url('.wp_get_attachment_url( get_post_thumbnail_id($post->ID) ).');min-height:inherit;background-size:cover;"> <div class="container center"> <h1>';
