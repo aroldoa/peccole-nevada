@@ -40,6 +40,8 @@
 					</div>
 					<!-- /logo -->
 
+					<!-- Revslider should go here -->
+
 					<!-- nav -->
 				<div class="col-md-8">
 					<nav class="navbar navbar-default" role="navigation">
