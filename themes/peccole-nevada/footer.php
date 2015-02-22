@@ -17,8 +17,7 @@
 				<div class="col-lg-11">
 				<!-- copyright -->
 				<p class="copyright">
-					&copy; Copyright <?php echo date('Y'); ?> <?php echo of_get_option('copyright', 'no entry'); ?><br/>
-					Compliance Hotline <strong>1-866-858-1485</strong>
+					&copy; Copyright <?php echo date('Y'); ?>  Peccole Nevada Corporation<br/>
 				</p>
 				</div><!-- /copyright -->
 
