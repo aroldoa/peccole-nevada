@@ -31,11 +31,7 @@
 			<!-- /footer -->
 
 		<?php wp_footer(); ?>
-		
-		<!-- analytics -->
-		<script>
-			<?php echo of_get_option('site_analytics', 'no entry'); ?>
-		</script>
 
+		<!-- analytics -->
 	</body>
 </html>
