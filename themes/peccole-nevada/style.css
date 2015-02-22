@@ -11,36 +11,44 @@ Version: 0.1
 @import url("../primobiz/style.css");
 
 /* 
-
 Class Table of Contents
 
 1. Global Elements
 2. Header Elements
 3. Navigation Elements
 4. Structure Elements
-
 */
 
-/*
+/*----------------------------------
 1. Global Elements
-*/
+-----------------------------------*/
 
-/*
+header{min-height: 670px;}
+nav.navbar{margin: 0px; background-color:#00529b; min-height: 90px; border-radius: 0px;}
+nav.navbar-default{text-align: center;}
+nav.navbar-default ul{margin: 20px 0px 0px 0px;}
+nav.navbar-default ul li{padding:0px 20px;}
+nav.navbar-default ul li a{color:#fff !important;}
+.pre-footer{background-color: #00529b; min-height: 300px;}
+footer{background-color: #00417b; min-height: 80px;}
+footer p{color: #fff; margin: 30px 0px 0px 0px; font-size: 12px;}
+
+/*----------------------------------
 2. Header Elements
-*/
+-----------------------------------*/
 
-/*
+/*----------------------------------
 3. Navigation Elements
-*/
+-----------------------------------*/
 
 /*----------------------------------
 4. Structure Elements
 -----------------------------------*/
 
-.intro{text-align: center; padding:80px 30px;}
+.intro{text-align: center; padding:95px 30px; background-color: #e7edf3; background-image: url('img/intro-background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;}
 .intro pre{margin: 0px; padding-top: 0px; background: none; border:none;}
 .intro h1{margin: 0px 0px 45px 0px; padding-top: 0px;}
 .intro p{line-height: 28px;}
-ul#owl-slider-wrapper{list-style-type: none; margin: 0px; padding: 0px;}
-ul#owl-slider-wrapper li{padding-top: 40px;}
+ul#uus-owl-slider-id{list-style-type: none; margin: 0px; padding: 0px;}
+ul#uus-owl-slider-id li{padding: 0px; margin: 0px;}
 

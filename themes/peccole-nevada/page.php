@@ -5,16 +5,12 @@ if ( is_front_page() ) {
     // This is to display the slider
 	echo '<section class="band showcase"></section>';
 } else {
-    // This is not the home page
-	echo '<section class="band intro"><div style="background-image:url('.wp_get_attachment_url( get_post_thumbnail_id($post->ID) ).');min-height:inherit;background-size:cover;"> <div class="container center"> <h1>';
-	echo  the_title() . '</h1><p>';
-	echo  the_excerpt() . '</p>';
-	echo  '</div></div> </section><div class="band end-intro"></div>';
+
 }
 if(is_front_page()){
-	echo '<div class="container-fluid">';
+	echo '<div class="band">';
 }else{
-	echo '<div class="container">';
+	echo '<div class="container-fluid">';
 }?>
 <!-- section -->
 	<section class="content">
@@ -35,5 +31,4 @@ if(is_front_page()){
 <!-- /section -->
 	</div><!-- /container -->
 </main>
-
 <?php get_footer(); ?>
