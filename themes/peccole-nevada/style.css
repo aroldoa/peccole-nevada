@@ -92,7 +92,18 @@ ul.uus-posts-wrapper li{
 	margin: 0px;
 }
 .uus-flat-text-wrapper{
-	display: none;
+	background-color: #00529b;
+	visibility:hidden;
+	opacity:0;
+	position:relative;
+	top:-200px;
+}
+.uus-flat-img-wrapper:hover .uus-flat-text-wrapper{
+	visibility:visible;
+	opacity:1;
+}
+.uus-posts-wrapper .uus-flat-text-wrapper h3{
+	margin-top:0;
 }
 
 /*----------------------------------
