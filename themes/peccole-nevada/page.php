@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main role="main" class="band">
+<main role="main" class="main">
 <?php
 if ( is_front_page() ) {
     // This is to display the slider
@@ -8,7 +8,7 @@ if ( is_front_page() ) {
 
 }
 if(is_front_page()){
-	echo '<div class="container-fluid">';
+	echo '<div class="container-fluid content-wrapper">';
 }else{
 	echo '<div class="container">';
 }?>

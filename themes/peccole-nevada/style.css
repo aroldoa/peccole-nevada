@@ -85,6 +85,9 @@ nav.navbar-default ul li a{
 	background-size: cover; 
 	background-position: center;
 }
+.main .content-wrapper{
+	padding:0;
+}
 ul.uus-posts-wrapper{
 	list-style-type: none; 
 	margin: 0px; 
