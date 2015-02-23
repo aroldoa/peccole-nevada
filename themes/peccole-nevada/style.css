@@ -82,12 +82,12 @@ nav.navbar-default ul li a{
 	background-size: cover; 
 	background-position: center;
 }
-ul#uus-posts-wrapper{
+ul.uus-posts-wrapper{
 	list-style-type: none; 
 	margin: 0px; 
 	padding: 0px;
 }
-ul#uus-posts-wrapper li{
+ul.uus-posts-wrapper li{
 	padding: 0px; 
 	margin: 0px;
 }
