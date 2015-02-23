@@ -1,7 +1,7 @@
-<section class="band pre-footer">
+		<section class="pre-footer">
 			<div class="container">
 				<div class="col-lg-4">
-					<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-3')) ?>
+					<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('pre-footer')) ?>
 				</div>
 				<div class="col-lg-4">
 					<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-4')) ?>
