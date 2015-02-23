@@ -226,7 +226,7 @@ if (function_exists('register_sidebar'))
         'name' => __('Pre Footer', 'html5blank'),
         'description' => __('Pre Footer widget area', 'html5blank'),
         'id' => 'pre-footer',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'before_widget' => '<div id="%1$s" class="col-lg-4">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'

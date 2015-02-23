@@ -1,14 +1,6 @@
 		<section class="pre-footer">
 			<div class="container">
-				<div class="col-lg-4">
-					<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('pre-footer')) ?>
-				</div>
-				<div class="col-lg-4">
-					<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-4')) ?>
-				</div>
-				<div class="col-lg-4">
-					<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-5')) ?>
-				</div>
+				<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('pre-footer')) ?>
 			</div>
 		</section>
 			<!-- footer -->
