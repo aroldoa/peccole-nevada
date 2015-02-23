@@ -1,5 +1,17 @@
 <?php
 
+    /**
+	 * Enqueue scripts
+	 *
+	 */
+	function peccole_styles() {
+		wp_enqueue_style( 'primo-biz', get_template_directory_uri() . '/style.css');
+	}
+
+	add_action( 'wp_enqueue_scripts', 'peccole_style' );
+
+
+
 add_action('init', 'create_post_type_locations'); // Add Testimonial Post Type
 
 /*------------------------------------*\
