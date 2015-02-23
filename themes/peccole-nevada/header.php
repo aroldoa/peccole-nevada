@@ -38,20 +38,20 @@
 
 					<!-- Revslider should go here -->
 
-					<!-- nav -->
-				<div class="col-md-8">
-					
-				</div>
-					<!-- /nav -->
-				</div>
 			</header>
-			<nav class="navbar navbar-default" role="navigation">
-				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<div class="collapse navbar-collapse navHeaderCollapse" id="bs-example-navbar-collapse-1">
-					<?php html5blank_nav();?>
+			<div class="nav-wrapper">
+				<div class=" container">
+					<nav class="navbar navbar-default" role="navigation">
+						<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="collapse navbar-collapse navHeaderCollapse" id="bs-example-navbar-collapse-1">
+							<?php html5blank_nav();?>
+						</div>
+					</nav>
+					<div class="breadcrumbs">
+					</div>
 				</div>
-			</nav>
+			</div>

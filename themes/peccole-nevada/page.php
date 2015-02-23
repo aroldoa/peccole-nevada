@@ -8,9 +8,9 @@ if ( is_front_page() ) {
 
 }
 if(is_front_page()){
-	echo '<div class="band">';
-}else{
 	echo '<div class="container-fluid">';
+}else{
+	echo '<div class="container">';
 }?>
 <!-- section -->
 	<section class="content">
