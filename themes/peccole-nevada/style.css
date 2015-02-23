@@ -98,7 +98,7 @@ ul.uus-posts-wrapper li{
 	position:relative;
 	top:-200px;
 }
-.uus-flat-img-wrapper:hover .uus-flat-text-wrapper{
+.uus-posts-wrapper li:hover .uus-flat-text-wrapper{
 	visibility:visible;
 	opacity:1;
 }
