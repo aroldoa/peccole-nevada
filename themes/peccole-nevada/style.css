@@ -97,6 +97,9 @@ ul.uus-posts-wrapper li{
 	opacity:0;
 	position:relative;
 	top:-200px;
+
+	-webkit-transition: visibility opacity 0.2s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+	transition: visibility opacity 0.2s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
 }
 .uus-posts-wrapper li:hover .uus-flat-text-wrapper{
 	visibility:visible;
