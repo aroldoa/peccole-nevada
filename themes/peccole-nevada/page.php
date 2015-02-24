@@ -33,10 +33,11 @@ if( is_front_page()){
 		<div class="map-area-wrapper">
 			<div id="gmap"></div>
 			<div class="locations-box">';
-				if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('locations-box'));
+				
 	echo '</div>
 		</div>';
 }
+// if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('locations-box'));
 ?>
 </main>
 <?php get_footer(); ?>
