@@ -221,7 +221,17 @@ function add_slug_to_body_class($classes)
 // If Dynamic Sidebar Exists
 if (function_exists('register_sidebar'))
 {
-    // Define Sidebar Widget Area 1
+    // Define Sidebar Widget Area
+    register_sidebar(array(
+        'name' => __('Locations Box', 'html5blank'),
+        'description' => __('Locations Box that goes over the map area', 'html5blank'),
+        'id' => 'locations-box',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area
     register_sidebar(array(
         'name' => __('Pre Footer', 'html5blank'),
         'description' => __('Pre Footer widget area', 'html5blank'),
