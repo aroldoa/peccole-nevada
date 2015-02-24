@@ -10,6 +10,8 @@
         wp_enqueue_script( 'google-maps', 'http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7&ver=3.9.3', array(),'', true );
         wp_enqueue_script( 'maplace', get_stylesheet_directory_uri() . '/inc/maplace-0.1.3.min.js', array('google-maps'),'', true );
         wp_enqueue_script( 'peccole-maplace', get_stylesheet_directory_uri() . '/inc/peccole-maplace.js', array('maplace'),'', true );
+
+        wp_enqueue_script( 'unslider', get_stylesheet_directory_uri() . '/inc/unslider.min.js', array('jquery'),'', true );
 	}
 
 	add_action( 'wp_enqueue_scripts', 'peccole_styles' );
@@ -61,5 +63,21 @@ function create_post_type_locations()
 }
 
 
+function add_this_script_footer(){ ?>
 
+    <script>
+    $(function() {
+        $('.slider').unslider({
+            speed: 500,               //  The speed to animate each slide (in milliseconds)
+            delay: 3000,              //  The delay between slide animations (in milliseconds)
+            keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+            dots: true,               //  Display dot navigation
+            fluid: true              //  Support responsive design. May break non-responsive designs
+        });
+    });
+    </script>
+
+<?php } 
+
+add_action('wp_footer', 'add_this_script_footer');
 ?>

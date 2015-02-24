@@ -26,7 +26,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 			<!-- header -->
-			<header class="band header clear" role="banner">
+			<header class="header clear" role="banner">
 				<div class="container">
 					<!-- logo -->
 					<div class="col-md-4 logo">
@@ -35,9 +35,14 @@
 						</a>
 					</div>
 					<!-- /logo -->
-
-					<!-- Revslider should go here -->
-
+				</div>
+				<div class="slider">
+					<ul>
+				        <li>This is a slide.</li>
+				        <li>This is another slide.</li>
+				        <li>This is a final slide.</li>
+				    </ul>
+				</div>
 			</header>
 			<div class="nav-wrapper">
 				<div class=" container">
