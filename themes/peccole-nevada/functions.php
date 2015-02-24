@@ -74,7 +74,7 @@ function add_this_script_footer(){ ?>
             dots: true,               //  Display dot navigation
             fluid: true              //  Support responsive design. May break non-responsive designs
         });
-    });
+    })(jQuery);
     </script>
 
 <?php } 
