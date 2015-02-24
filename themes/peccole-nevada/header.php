@@ -38,9 +38,7 @@
 				</div>
 				<div class="slider">
 					<ul>
-				        <li>This is a slide.</li>
-				        <li>This is another slide.</li>
-				        <li>This is a final slide.</li>
+				        <li><img src="<?php get_stylesheet_directory_uri(); ?>/slide1.jpg" /></li>
 				    </ul>
 				</div>
 			</header>
