@@ -10,44 +10,44 @@ var peccole = new Maplace({
             },
             {
                 //Hualapai Commons
-                lat: 36.1529526,
-                lon: -115.3065585,
+                lat: 36.1569258,
+                lon: -115.3079225,
                 icon: 'http://maps.google.com/mapfiles/markerB.png',
                 type:'marker'
             },
             {
                 //Fort Apache Commons
-                lat: 36.1553271,
-                lon: -115.2864462,
+                lat: 36.1579692,
+                lon: -115.2940207,
                 icon: 'http://maps.google.com/mapfiles/markerC.png',
                 type:'marker'
             },
             {
                 //Crossroads Commons
-                lat: 36.1609531,
-                lon: -115.2846403,
+                lat: 36.1566039,
+                lon: -115.2892412,
                 icon: 'http://maps.google.com/mapfiles/markerD.png',
                 type:'marker'
             },
             {
                 //Peccole Professional Park
-                lat: 36.1616632,
-                lon: -115.3082638,
+                lat: 36.1685232,
+                lon: -115.314862,
                 icon: 'http://maps.google.com/mapfiles/markerE.png',
                 type:'marker'
             },
             {
                 //Rampart Commons
-                lat: 36.1585888,
-                lon: -115.2871273,
+                lat: 36.160148,
+                lon: -115.2932749,
                 icon: 'http://maps.google.com/mapfiles/markerF.png',
                 type:'marker'
             },
             {
                 //Sir Williams Court
-                lat: 36.1634996,
-                lon: -115.2924899,
-                icon: 'http://maps.google.com/mapfiles/markerA.png',
+                lat: 36.1636902,
+                lon: -115.2922056,
+                icon: 'http://maps.google.com/mapfiles/markerG.png',
                 type:'marker'
             }],
             map_options:{
@@ -97,7 +97,38 @@ var peccole = new Maplace({
         });
         peccole.o.afterCreateMarker = function (index, location, marker) {
             google.maps.event.addListener(marker, 'click', function() {
-                window.open('http://goo.gl/TRUaSL');
+                switch( index ){
+                    //Durango Commons
+                    case 0:
+                        window.open('http://goo.gl/v9pohT');
+                    break;
+                    //Hualapai Commons
+                    case 1:
+                        window.open('http://goo.gl/41YHgs');
+                    break;
+                    //Fort Apache Commons
+                    case 2:
+                        window.open('http://goo.gl/6DgNcQ');
+                    break;
+                    //Crossroads Commons
+                    case 3:
+                        window.open('http://goo.gl/wijYKf');
+                    break;
+                    //Peccole Professional Park
+                    case 4:
+                        window.open('http://goo.gl/B2Fa1A');
+                    break;
+                    //Rampart Commons
+                    case 5:
+                        window.open('http://goo.gl/ISS11e');
+                    break;
+                    //Sir Williams Court
+                    case 6:
+                        window.open('http://goo.gl/8tNWpY');
+                    break;
+
+                }
+                console.log(index);
             });
             
         };
