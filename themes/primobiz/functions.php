@@ -72,7 +72,7 @@ function html5blank_nav()
 		'container'       => '',
 		'container_class' => '',
 		'container_id'    => '',
-		'menu_class'      => 'nav navbar-nav',
+		'menu_class'      => 'nav nav-justified',
 		'menu_id'         => '',
 		'echo'            => true,
 		'fallback_cb'     => 'wp_page_menu',
