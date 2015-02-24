@@ -66,7 +66,7 @@ function create_post_type_locations()
 function add_this_script_footer(){ ?>
 
     <script>
-    $(function() {
+    jQuery(function($) {
         $('.slider').unslider({
             speed: 500,               //  The speed to animate each slide (in milliseconds)
             delay: 3000,              //  The delay between slide animations (in milliseconds)
