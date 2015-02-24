@@ -12,6 +12,7 @@
         wp_enqueue_script( 'peccole-maplace', get_stylesheet_directory_uri() . '/inc/peccole-maplace.js', array('maplace'),'', true );
 
         wp_enqueue_script( 'unslider', get_stylesheet_directory_uri() . '/inc/unslider.min.js', array('jquery'),'', true );
+        wp_enqueue_script( 'peccole-unslider', get_stylesheet_directory_uri() . '/inc/peccole-unslider.js', array('unslider'),'', true );
 	}
 
 	add_action( 'wp_enqueue_scripts', 'peccole_styles' );
@@ -61,23 +62,4 @@ function create_post_type_locations()
         ) // Add Category and Post Tags support
     ));
 }
-
-
-function add_this_script_footer(){ ?>
-
-    <script>
-    (function($) {
-        $('.slider').unslider({
-            speed: 500,               //  The speed to animate each slide (in milliseconds)
-            delay: 3000,              //  The delay between slide animations (in milliseconds)
-            keys: true,               //  Enable keyboard (left, right) arrow shortcuts
-            dots: true,               //  Display dot navigation
-            fluid: true              //  Support responsive design. May break non-responsive designs
-        });
-    })(jQuery);
-    </script>
-
-<?php } 
-
-add_action('wp_footer', 'add_this_script_footer');
 ?>
