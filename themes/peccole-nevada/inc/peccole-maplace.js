@@ -1,4 +1,4 @@
-var primo = new Maplace({
+var peccole = new Maplace({
             locations: [{
                 lat: 29.611417, 
                 lon: -98.607020,
@@ -10,7 +10,7 @@ var primo = new Maplace({
                 zoom: 15
             },
             styles:{
-                'Primo':[
+                'peccole':[
                 {
                     stylers:[
                         {hue: "#ff1a00"},
@@ -19,19 +19,12 @@ var primo = new Maplace({
                         {lightness: 33},
                         {gamma: 0.5}
                     ]
-                },
-                {
-                    featureType: 'water',
-                    elementType: 'geometry',
-                    stylers:[
-                        {color: '#2D333C'}
-                    ]
                 }]
             }
         });
-        primo.o.afterCreateMarker = function (index, location, marker) {
+        peccole.o.afterCreateMarker = function (index, location, marker) {
         google.maps.event.addListener(marker, 'click', function() {
             window.open('http://goo.gl/TRUaSL');
         });
     };
-    primo.Load();
+    peccole.Load();
