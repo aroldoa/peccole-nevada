@@ -1,5 +1,6 @@
 
     var peccole = new Maplace({
+        map_div: '#gmap',
         locations: [{
             lat: 29.611417, 
             lon: -98.607020,
@@ -25,15 +26,14 @@
         });
 
         peccole.o.afterCreateMarker = function (index, location, marker) {
-        google.maps.event.addListener(marker, 'click', function() {
-            window.open('http://goo.gl/TRUaSL');
-        });
+            google.maps.event.addListener(marker, 'click', function() {
+                window.open('http://goo.gl/TRUaSL');
+            });
 
-        google.maps.event.addDomListener(window, 'load', primo.Load());
-        google.maps.event.addDomListener(window, "resize", function() {
-            google.maps.event.trigger(peccole, "resize");
-            peccole.oMap.setCenter(peccole.oMap.getCenter());
-            peccole.Load();
-        });
-
-    });
+            google.maps.event.addDomListener(window, 'load', primo.Load());
+            google.maps.event.addDomListener(window, "resize", function() {
+                google.maps.event.trigger(peccole, "resize");
+                peccole.oMap.setCenter(peccole.oMap.getCenter());
+                peccole.Load();
+            });
+        };
