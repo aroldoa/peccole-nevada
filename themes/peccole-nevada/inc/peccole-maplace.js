@@ -30,7 +30,7 @@
                 window.open('http://goo.gl/TRUaSL');
             });
 
-            google.maps.event.addDomListener(window, 'load', primo.Load());
+            google.maps.event.addDomListener(window, 'load', peccole.Load());
             google.maps.event.addDomListener(window, "resize", function() {
                 google.maps.event.trigger(peccole, "resize");
                 peccole.oMap.setCenter(peccole.oMap.getCenter());
