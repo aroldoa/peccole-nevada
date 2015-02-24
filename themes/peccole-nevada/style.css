@@ -116,7 +116,8 @@ ul.uus-posts-wrapper li{
 }
 
 #gmap{
-	height:500px;
+	height: 500px;
+	opacity: .75;
 }
 /*----------------------------------
 5. Font Elements
