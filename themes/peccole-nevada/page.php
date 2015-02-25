@@ -13,7 +13,6 @@ if( is_front_page() ){
 			<?php the_content(); ?>
 			<?php comments_template( '', true ); // Remove if you don't want comments ?>
 			<br class="clear">
-			<?php edit_post_link(); ?>
 		<?php endwhile; ?>
 		<?php else: ?>
 	<!-- article -->

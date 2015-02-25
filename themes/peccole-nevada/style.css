@@ -93,6 +93,8 @@ ul.uus-posts-wrapper{
 ul.uus-posts-wrapper li{
 	padding: 0px; 
 	margin: 0px;
+	min-height: 300px;
+	float: left;
 }
 .uus-flat-text-wrapper{
 	background-color: #00529b;
@@ -109,9 +111,12 @@ ul.uus-posts-wrapper li{
 .uus-posts-wrapper li:hover .uus-flat-text-wrapper{
 	visibility:visible;
 	opacity:.95;
+	cursor: pointer;
 }
-.uus-posts-wrapper .uus-flat-text-wrapper h3{
-	margin-top:0;
+
+.uus-posts-wrapper .uus-flat-text-wrapper{
+	text-align: center;
+	color: #fff;
 }
 
 #gmap{
@@ -141,6 +146,7 @@ ul.uus-posts-wrapper li{
 .intro p{
 	line-height: 32px; 
 	font-size: 17px;
+	padding: 10px 165px;
 }
 .pre-footer h3{
 	color:#71b6f3; 
@@ -153,4 +159,12 @@ ul.uus-posts-wrapper li{
 	color: #fff; 
 	margin: 30px 0px 0px 0px; 
 	font-size: 12px;
+}
+
+.uus-posts-wrapper .uus-flat-text-wrapper h3{
+	margin-top:120px;
+}
+
+.uus-posts-wrapper .uus-flat-text-wrapper p{
+padding: 5px 10px;
 }
