@@ -31,7 +31,7 @@ Class Table of Contents
 	background-color: #00529b; 
 	min-height: 300px;
 }
-footer{
+.footer{
 	background-color: #00417b; 
 	min-height: 80px;
 }
@@ -96,6 +96,8 @@ ul.uus-posts-wrapper li{
 }
 .uus-flat-text-wrapper{
 	background-color: #00529b;
+	width: 100%;
+	height: 100%;
 	visibility:hidden;
 	opacity:0;
 	position:absolute;
@@ -116,6 +118,10 @@ ul.uus-posts-wrapper li{
 	height: 500px;
 	opacity: .75;
 }
+
+.slider ul{list-style-type: none; margin: 0px; padding: 0px; display: block;}
+.slider ul li{list-style-type: none; margin: 0px; padding: 0px;}
+
 /*----------------------------------
 5. Font Elements
 -----------------------------------*/
