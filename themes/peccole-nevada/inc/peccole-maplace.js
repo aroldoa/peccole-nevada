@@ -61,7 +61,7 @@ var peccole = new Maplace({
                         scrollwheel: true
                     });
                 }
-            }
+            },
             styles:{
                 'peccole':[
                 {
