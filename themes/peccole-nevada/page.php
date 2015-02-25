@@ -32,7 +32,7 @@ if( is_front_page()){
 	echo '
 		<div class="map-area-wrapper">
 			<div id="gmap"></div>
-			<div class="locations-box">';
+			<div class="locations-box-wrapper clearfix">';
 			if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('locations-box'));				
 	echo '</div>
 		</div>';
