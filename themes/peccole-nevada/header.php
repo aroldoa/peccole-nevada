@@ -47,16 +47,12 @@
 						            'order'				=> 'ASC'
 						            );
 							
-						    $img_attr = array(
-						        'class' => "img-responsive",
-						    );
 						    $loop = new WP_Query( $args );
 						    global $post;
-						    print_r($loop->the_post());
 						    while ($loop->have_posts() ) : $loop->the_post();
-								$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
+								$image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 								$excerpt = apply_filters('the_excerpt', get_post_field('post_excerpt', $post->ID));
-								echo "<li style='min-height:670px; background-image:url(" . get_the_post_thumbnail( $post->ID, 'full', $img_attr ) . "); background-size:cover; background-position:center; '> nothing </li>";
+								echo "<li style='min-height:670px; background-image:url(" . $image . "); background-size:cover; background-position:center; '> nothing </li>";
 							endwhile;
 					        
 					        wp_reset_query();
