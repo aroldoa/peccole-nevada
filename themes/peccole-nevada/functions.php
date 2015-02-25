@@ -20,7 +20,7 @@
 
 
 add_action('init', 'create_post_type_locations'); // Add Testimonial Post Type
-add_action('init', 'create_post_type_slider'); // Add Testimonial Post Type
+add_action('init', 'create_post_type_sliders'); // Add Testimonial Post Type
 
 /*------------------------------------*\
 	Custom Post Types
@@ -65,11 +65,11 @@ function create_post_type_locations()
 }
 
 // Create 1 Custom Post type for slider
-function create_post_type_slider()
+function create_post_type_sliders()
 {
     register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
     register_taxonomy_for_object_type('post_tag', 'html5-blank');
-    register_post_type('slider', // Register Custom Post Type
+    register_post_type('sliders', // Register Custom Post Type
         array(
         'labels' => array(
             'name' => __('Sliders', 'html5blank'), // Rename these to suit
