@@ -38,7 +38,33 @@
 				</div>
 				<div class="slider">
 					<ul>
-				        <li><img src="<?php get_stylesheet_directory_uri(); ?>/slide1.jpg" /></li>
+						<?php
+							$args = array(
+						            'post_type'			=> 'sliders',
+						            'post_status'  		=> 'publish',
+						            'posts_per_page'	=> 8,
+						            'orderby'			=> 'title',
+						            'order'				=> 'ASC'
+						            );
+							
+						    $img_attr = array(
+						        'class' => "img-responsive",
+						    );
+						    $loop = new WP_Query( $args );
+						    global $post;
+						    while ($loop->have_posts() ) : $loop->the_post();
+								$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
+								$excerpt = apply_filters('the_excerpt', get_post_field('post_excerpt', $post->ID));
+								echo "
+									<li>
+				    					<a id='unslider-post-" . $post->ID . "' href='" . get_permalink($post->ID) . "' title='" . get_the_title($post->ID) ."'>" .
+				    						get_the_post_thumbnail( $post->ID, 'full', $img_attr )
+				    					."</a>
+				    				</li>";
+							endwhile;
+					        
+					        wp_reset_query();
+						?>
 				    </ul>
 				</div>
 			</header>
