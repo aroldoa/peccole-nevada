@@ -123,9 +123,21 @@ ul.uus-posts-wrapper li{
 	height: 500px;
 	opacity: .75;
 }
-
-.slider ul{list-style-type: none; margin: 0px; padding: 0px; display: block;}
-.slider ul li{list-style-type: none; margin: 0px; padding: 0px; float: left;}
+.gmnoprint div img{
+	max-width:none;
+}
+.slider ul{
+	list-style-type: none; 
+	margin: 0px; 
+	padding: 0px; 
+	display: block;
+}
+.slider ul li{
+	list-style-type: none; 
+	margin: 0px; 
+	padding: 0px; 
+	float: left;
+}
 
 /*----------------------------------
 5. Font Elements
@@ -166,5 +178,5 @@ ul.uus-posts-wrapper li{
 }
 
 .uus-posts-wrapper .uus-flat-text-wrapper p{
-padding: 5px 10px;
+	padding: 5px 10px;
 }
