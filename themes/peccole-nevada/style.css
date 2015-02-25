@@ -24,11 +24,8 @@ Class Table of Contents
 1. Global Elements
 -----------------------------------*/
 
-header{
+.header{
 	min-height: 670px;
-	background-image: url('img/slide1.jpg'); 
-	background-size:cover; 
-	background-position: center;
 }
 .pre-footer{
 	background-color: #00529b; 
