@@ -21,7 +21,7 @@
         <?php $current_post = ($post->ID == $current_post_id && is_single()) ? 'active' : ''; ?>
 
         <?php if (($i % 5 == 0) || ($i == 1)){
-          echo "<div class='col-lg-6'>";
+          echo "<div class='col-lg-6 col-md-6 col-sm-6'>";
         }?>
 
         <article <?php post_class($current_post); ?>>
