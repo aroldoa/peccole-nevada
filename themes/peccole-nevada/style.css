@@ -128,7 +128,9 @@ ul.uus-posts-wrapper li{
 	text-align: center;
 	color: #fff;
 }
-
+.map-area-wrapper{
+	position: relative;
+}
 #gmap{
 	height: 500px;
 	opacity: .75;
