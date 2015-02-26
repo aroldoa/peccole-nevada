@@ -177,11 +177,12 @@ ul.nav>li>a:focus,
  
 @media (max-width: 1199px){
 	.locations-box-wrapper{
-		position:relative;
+		/*position:relative;
 		top:0;
 		left:0;
 		opacity:1;
-		width:inherit;
+		width:inherit;*/
+		display: none;
 	}
 }
 /* Portrait tablet to landscape and desktop */
