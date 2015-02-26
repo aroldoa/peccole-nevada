@@ -158,7 +158,8 @@ ul.uus-posts-wrapper li{
 	opacity:.95;
 	width:35%;
 }
-.locations-box-wrapper .upw-posts article{
+.locations-box-wrapper .upw-posts article,
+.pre-footer .upw-posts article{
 	border-bottom:none;
 	padding-bottom:0;
 	margin-bottom: 0;
