@@ -158,6 +158,11 @@ ul.uus-posts-wrapper li{
 	opacity:.95;
 	width:35%;
 }
+.locations-box-wrapper .upw-posts article{
+	border-bottom:none;
+	padding-bottom:0;
+	margin-bottom: 0;
+}
 /*----------------------------------
 5. Font Elements
 -----------------------------------*/
