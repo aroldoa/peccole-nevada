@@ -63,10 +63,10 @@ nav.navbar-default ul{
 	/*margin: 20px 0px 0px 0px;*/
 }
 nav.navbar-default ul li{
-	padding:0px 20px;
+	/*padding:0px 20px;*/
 }
 nav.navbar-default ul li a{
-	color:#71b6f3 !important;
+	color:#fff !important;
 }
 ul.nav>li>a{
 	padding:35px 15px;
@@ -79,6 +79,15 @@ ul.nav>li>a:focus,
 	background-color: #00417b;
 }
 
+/*ul.nav>li>a:after,
+.current-menu-item:after,
+.current_page_item:after{
+    content: url("images/arrowImg.png");
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    margin-left: - <width-of-your-image> / 2; /* negative number!*/
+}*/
 /*----------------------------------
 4. Structure Elements
 -----------------------------------*/
