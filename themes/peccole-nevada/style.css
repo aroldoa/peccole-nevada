@@ -79,15 +79,6 @@ ul.nav>li>a:focus,
 	background-color: #00417b;
 }
 
-/*ul.nav>li>a:after,
-.current-menu-item:after,
-.current_page_item:after{
-    content: url("images/arrowImg.png");
-    position: absolute;
-    left: 50%;
-    top: 30px;
-    margin-left: - <width-of-your-image> / 2; /* negative number!*/
-}*/
 /*----------------------------------
 4. Structure Elements
 -----------------------------------*/
