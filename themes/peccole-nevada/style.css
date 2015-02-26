@@ -166,3 +166,29 @@ ul.nav>li>a:focus,
 	margin: 30px 0px 0px 0px; 
 	font-size: 12px;
 }
+
+/*----------------------------------
+5. Media Queries
+-----------------------------------*/
+
+/* Large desktop */
+@media (min-width: 1200px){
+}
+ 
+@media (max-width: 1199px){
+	.locations-box-wrapper{
+		position:relative;
+		top:0;
+		left:0;
+		opacity:1;
+		width:inherit;
+	}
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { ... }
