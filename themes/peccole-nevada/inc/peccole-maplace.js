@@ -51,7 +51,8 @@ var peccole = new Maplace({
                 type:'marker'
             }],
             map_options:{
-                set_center: [36.1634996, -115.2924899],
+                // set_center: [36.1634996, -115.2924899],
+                set_center: [36.165484, -115.359621],
                 zoom: 13,
                 scrollwheel: false
             },
