@@ -51,7 +51,7 @@ Class Table of Contents
 }
 nav.navbar{
 	margin: 0px; 
-	min-height: 90px; 
+	min-height: 0px; 
 	border-radius: 0px; 
 	border:none;
 	background-color:#00529b; 
@@ -60,13 +60,23 @@ nav.navbar-default{
 	text-align: center;
 }
 nav.navbar-default ul{
-	margin: 20px 0px 0px 0px;
+	/*margin: 20px 0px 0px 0px;*/
 }
 nav.navbar-default ul li{
 	padding:0px 20px;
 }
 nav.navbar-default ul li a{
-	color:#fff !important;
+	color:#71b6f3 !important;
+}
+ul.nav>li>a{
+	padding:35px 15px;
+}
+ul.nav>li>a:hover,
+ul.nav>li>a:focus,
+.current-menu-item,
+.current_page_item
+{
+	background-color: #00417b;
 }
 
 /*----------------------------------
