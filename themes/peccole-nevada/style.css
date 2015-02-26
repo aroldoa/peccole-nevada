@@ -148,7 +148,14 @@ ul.uus-posts-wrapper li{
 	padding: 0px; 
 	float: left;
 }
-
+.locations-box-wrapper{
+	position:absolute;
+	top:10%;
+	left:15%;
+	background-color:#00529b;
+	opacity:.95;
+	width:35%;
+}
 /*----------------------------------
 5. Font Elements
 -----------------------------------*/
