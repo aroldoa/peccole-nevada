@@ -31,7 +31,7 @@
 				<header class="header-wrapper-home clear" role="banner">
 			<?php }else{ ?>
 				<header class="header-wrapper-sub clear" role="banner">
-			}?>
+			<?php } ?>
 				<div class="header">
 					<div class="container">
 						<!-- logo -->
