@@ -26,15 +26,17 @@
 	</head>
 	<body <?php body_class(); ?>>
 			<!-- header -->
-			<header class="header clear" role="banner">
-				<div class="container">
-					<!-- logo -->
-					<div class="col-md-4 logo">
-						<a href="">
-							<img src="" alt="Peccole Neveda Corporation"/>
-						</a>
+			<header class="header-wrapper clear" role="banner">
+				<div class="header">
+					<div class="container">
+						<!-- logo -->
+						<div class="col-md-4 logo">
+							<a href="">
+								<img src="" alt="Peccole Neveda Corporation"/>
+							</a>
+						</div>
+						<!-- /logo -->
 					</div>
-					<!-- /logo -->
 				</div>
 				<div class="slider">
 					<ul>

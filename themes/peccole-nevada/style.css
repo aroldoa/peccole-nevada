@@ -25,8 +25,14 @@ Class Table of Contents
 1. Global Elements
 -----------------------------------*/
 
-.header{
+.header-wrapper{
 	min-height: 670px;
+}
+.header{
+	width:100%;
+	position:absolute;
+	top:50px;
+	z-index:999;
 }
 .pre-footer{
 	background-color: #00529b; 
