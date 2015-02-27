@@ -53,6 +53,14 @@ Class Table of Contents
 3. Navigation Elements
 -----------------------------------*/
 
+.arrows .prev{
+	display:inline-block;
+	float:left;
+}
+.arrows .next{
+	display:inline-block;
+	float:right;
+}
 .nav-wrapper{
 	background-color:#00529b; 
 }
