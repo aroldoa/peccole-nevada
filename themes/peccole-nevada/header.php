@@ -26,7 +26,12 @@
 	</head>
 	<body <?php body_class(); ?>>
 			<!-- header -->
-			<header class="header-wrapper clear" role="banner">
+			<?php
+			if( is_front_page()){ ?>
+				<header class="header-wrapper-home clear" role="banner">
+			<?php }else{ ?>
+				<header class="header-wrapper-sub clear" role="banner">
+			}?>
 				<div class="header">
 					<div class="container">
 						<!-- logo -->
@@ -38,6 +43,8 @@
 						<!-- /logo -->
 					</div>
 				</div>
+			<?php
+				if( is_front_page()){ ?>
 				<div class="slider">
 					<ul>
 						<?php
@@ -64,6 +71,7 @@
 			    	<a href='#' class='unslider-arrow prev'>Previous slide</a>
 			    	<a href='#' class='unslider-arrow next'>Next slide</a>
 		    	</div>
+		    	<?php } ?>
 			</header>
 			<div class="nav-wrapper">
 				<div class=" container">
