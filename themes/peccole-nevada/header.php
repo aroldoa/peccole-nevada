@@ -56,6 +56,9 @@
 								$excerpt = apply_filters('the_excerpt', get_post_field('post_excerpt', $post->ID));
 								echo "<li style='min-height:670px; background-image:url(" . $image . "); background-size:cover; background-position:center; '></li>";
 							endwhile;
+							echo "
+						    	<a href='#' class='unslider-arrow prev'>Previous slide</a>
+						    	<a href='#'' class='unslider-arrow next'>Next slide</a>";
 					        
 					        wp_reset_query();
 						?>
