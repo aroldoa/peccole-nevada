@@ -32,7 +32,7 @@
 						<!-- logo -->
 						<div class="col-md-4 logo">
 							<a href="">
-								<img src="" alt="Peccole Neveda Corporation"/>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Peccole Neveda Corporation"/>
 							</a>
 						</div>
 						<!-- /logo -->
