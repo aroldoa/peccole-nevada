@@ -60,7 +60,7 @@
 						?>
 				    </ul>
 				</div>
-				<div class="arrows container">
+				<div class="arrows container-fluid">
 			    	<a href='#' class='unslider-arrow prev'>Previous slide</a>
 			    	<a href='#' class='unslider-arrow next'>Next slide</a>
 		    	</div>
