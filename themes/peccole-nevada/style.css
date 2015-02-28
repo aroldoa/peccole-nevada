@@ -278,10 +278,10 @@ h3.uus-post-title{
 /*----------------------------------
 6. Helper Classes
 -----------------------------------*/
-body.loaded{
+.loaded{
 	opacity: 1;
 }
-body.load{
+.load{
 	opacity: 0;
 	-webkit-transition: opacity .7s;
 	-moz-transition: opacity .7s;

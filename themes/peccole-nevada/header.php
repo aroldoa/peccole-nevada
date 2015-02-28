@@ -24,7 +24,7 @@
         </script>
 
 	</head>
-	<body <?php body_class('load'); ?>>
+	<body class='load'>
 			<!-- header -->
 			<?php
 			if( is_front_page()){ ?>
