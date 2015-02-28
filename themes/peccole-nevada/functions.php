@@ -28,7 +28,9 @@ add_action('init', 'create_post_type_sliders'); // Add Testimonial Post Type
 //inline js at footer
 function footer_js(){?>
     <script>
-        jQuery('.load').addClass('loaded');
+        jQuery(document).ready(function(){
+            jQuery('.load').addClass('loaded');
+        });
     </script>
     <?php
 }
