@@ -25,6 +25,15 @@
 add_action('init', 'create_post_type_locations'); // Add Testimonial Post Type
 add_action('init', 'create_post_type_sliders'); // Add Testimonial Post Type
 
+//inline js at footer
+function footer_js(){?>
+    <script>
+        jQuery('.load').addClass('loaded');
+    </script>
+    <?php
+}
+add_action('wp_footer', 'footer_js');
+
 /*------------------------------------*\
 	Custom Post Types
 \*------------------------------------*/

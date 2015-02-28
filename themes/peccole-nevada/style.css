@@ -19,12 +19,15 @@ Class Table of Contents
 4. Structure Elements
 5. Font Elements
 6. Media Queries
+7. Helper Classes
 */
 
 /*----------------------------------
 1. Global Elements
 -----------------------------------*/
-
+html{
+	background-color: #000;
+}
 .header-wrapper-home{
 	min-height: 670px;
 }
@@ -230,7 +233,7 @@ h3.uus-post-title{
 }
 
 /*----------------------------------
-5. Media Queries
+6. Media Queries
 -----------------------------------*/
 
 /* Large desktop */
@@ -270,3 +273,18 @@ h3.uus-post-title{
  
 /* Landscape phones and down */
 @media (max-width: 480px) { ... }
+
+/*----------------------------------
+6. Helper Classes
+-----------------------------------*/
+.loaded{
+	opacity: 1;
+}
+.load{
+	opacity: 0;
+	-webkit-transition: opacity .7s;
+	-moz-transition: opacity .7s;
+	-o-transition: opacity .7s;
+	-ms-transition: opacity .7s;
+	transition: opacity .7s;
+}
