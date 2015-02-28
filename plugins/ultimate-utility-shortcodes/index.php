@@ -15,6 +15,7 @@ function uus_load_dependencies( $owlslider, $lazyload ){
 		'bootstrap_default_cols'	=>	12
 		);
 
+
 	if( $owlslider ){
 		$owl_carousel_js = 'owl-carousel-js';
 		//get the carousel js url
@@ -38,7 +39,7 @@ function uus_load_dependencies( $owlslider, $lazyload ){
 	    }
 	}
 
-	if( $lazyload ){
+	if( $lazyload){
 
 		$lazy_load_js = 'lazy-load-xt';
 		//get the lazy load settings js url
@@ -209,6 +210,10 @@ function uus_posts_listing($atts, $content){
 	//extract all from attributes array
 	extract($atts);
 
+	//convert string booleans from owlslider and lazyload to real booleans
+	$owlslider = filter_var($owlslider, FILTER_VALIDATE_BOOLEAN);
+	$lazyload = filter_var($lazyload, FILTER_VALIDATE_BOOLEAN); // true
+
 	//extract all from params array
 	extract(uus_load_dependencies($owlslider,$lazyload));
 
@@ -263,12 +268,6 @@ function uus_posts_listing($atts, $content){
 		endwhile;
         
         wp_reset_query();
-
-        if( $lazyload ){
-        	$output .= "
-        	<script>
-			</script>";
-        }
     
         $output .= "</ul>";
     }
