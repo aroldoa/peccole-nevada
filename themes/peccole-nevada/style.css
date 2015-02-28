@@ -277,7 +277,7 @@ h3.uus-post-title{
 /*----------------------------------
 6. Helper Classes
 -----------------------------------*/
-.loaded{
+.load.loaded{
 	opacity: 1;
 }
 .load{
