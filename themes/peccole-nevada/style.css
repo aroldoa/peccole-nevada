@@ -18,8 +18,9 @@ Class Table of Contents
 3. Navigation Elements
 4. Structure Elements
 5. Font Elements
-6. Media Queries
-7. Helper Classes
+6. Helper Classes
+7. Media Queries
+
 */
 
 /*----------------------------------
@@ -234,7 +235,22 @@ h3.uus-post-title{
 }
 
 /*----------------------------------
-6. Media Queries
+6. Helper Classes
+-----------------------------------*/
+.load{
+	opacity: 0;
+	-webkit-transition: opacity .7s;
+	-moz-transition: opacity .7s;
+	-o-transition: opacity .7s;
+	-ms-transition: opacity .7s;
+	transition: opacity .7s;
+}
+.loaded{
+	opacity: 1;
+}
+
+/*----------------------------------
+7. Media Queries
 -----------------------------------*/
 
 /* Large desktop */
@@ -275,17 +291,4 @@ h3.uus-post-title{
 /* Landscape phones and down */
 @media (max-width: 480px) { ... }
 
-/*----------------------------------
-6. Helper Classes
------------------------------------*/
-.loaded{
-	opacity: 1;
-}
-.load{
-	opacity: 0;
-	-webkit-transition: opacity .7s;
-	-moz-transition: opacity .7s;
-	-o-transition: opacity .7s;
-	-ms-transition: opacity .7s;
-	transition: opacity .7s;
-}
+
