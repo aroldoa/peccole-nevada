@@ -1,3 +1,6 @@
+		<?php
+		var_dump(get_queried_object()); ?>
+
 		<section class="pre-footer">
 			<div class="container">
 				<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('pre-footer')) ?>
