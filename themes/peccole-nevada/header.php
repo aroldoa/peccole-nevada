@@ -71,7 +71,11 @@
 			    	<a href='#' class='unslider-arrow prev'>Previous slide</a>
 			    	<a href='#' class='unslider-arrow next'>Next slide</a>
 		    	</div>
-		    	<?php } ?>
+		    	<?php }else{ 
+		    		$locations_stored_meta = get_post_meta( $post->ID ); ?>
+		    		<div class="sub-header" style="background-image:url(<?php if ( isset ( $locations_stored_meta['meta-image'] ) ) echo $locations_stored_meta['meta-image'][0]; ?> ); background-size:cover; background-position:center;">
+		    		<?php }?>
+		    		</div>
 			</header>
 			<div class="nav-wrapper">
 				<div class=" container">
