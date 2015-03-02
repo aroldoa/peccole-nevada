@@ -99,7 +99,7 @@
 			<div class="breadcrumbs">
 				<div class="container">
 				<?php 
-					if(function_exists('bcn_display')){
+					if(function_exists('bcn_display') && !is_front_page()){
 				        bcn_display();
 				    } ?>
 			    </div>
