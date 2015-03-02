@@ -27,7 +27,7 @@ Class Table of Contents
 1. Global Elements
 -----------------------------------*/
 html{
-	background-color: #000;
+	background-color: #fff;
 }
 .header-wrapper-home{
 	min-height: 670px;
@@ -127,7 +127,7 @@ ul.nav>li>a:hover{
 }
 
 h3.uus-post-title{
-	margin-top: 100px;
+	margin-top: 60px;
 	font-family: "kepler-std-subhead",serif;
 	font-size: 34px;
 }
@@ -171,14 +171,47 @@ h3.uus-post-title{
 	margin-bottom: 0;
 }
 .locations-box{
-	margin:20px 30px;
+	margin:15px 30px;
 }
 .locations-box h3{
 	color:#fff;
 	font-family: "kepler-std-subhead",serif;
 }
 
+.locations-box h4{
+	}
+.locations-box h4.entry-title:before{
+
+content: "";
+background-image: url('img/sprites.png');
+background-repeat: no-repeat;
+background-position: -21px 0px;
+width: 20px;
+height: 26px;
+padding-left: 0px;  /* width of the image plus a little extra padding */
+display: block;  /* may not need this, but I've found I do */
+float: left;
+margin: 0 0px 0 0;
+
+}
+
 .spacer{padding: 85px 0px;}
+
+ul#social{margin: 0px; padding: 0px; display:inline; width: 100%;}
+ul#social li{margin: 0;padding: 0px 6px 0px 0px;list-style: none;display: inline; float: left;}
+ul#social li a{height: 43px;display: inline-block;}
+ul#social li a#facebook{width: 44px;background: url('img/sprites.png') -52px 0px;}
+ul#social li a#facebook:hover{width: 44px;background: url('img/sprites.png') -52px -44px;}
+ul#social li a#linkedin{width: 44px;background: url('img/sprites.png') -112px 0px;}
+ul#social li a#linkedin:hover{width: 44px;background: url('img/sprites.png') -112px -43px;}
+ul#social li a#twitter{width: 44px;background: url('img/sprites.png') -169px 0px;}
+ul#social li a#twitter:hover{width: 44px;background: url('img/sprites.png') -169px -43px;}
+ul#social li a#google{width: 43px;background: url('img/sprites.png') -225px 0px;}
+ul#social li a#google:hover{width: 43px;background: url('img/sprites.png') -225px -44px;}
+
+.breadcrumbs{clear:both;background-color: #e7edf3;}
+
+
 
 /*----------------------------------
 5. Font Elements
@@ -234,6 +267,39 @@ h3.uus-post-title{
 	margin-left: 30px;
 }
 
+.upw-posts h4.entry-title a{
+	
+	color: #fff;
+	font-weight: lighter;
+	font-size: 14px;
+
+}
+
+div.address p.street:before{
+content: "";
+background-image: url('img/sprites.png');
+background-repeat: no-repeat;
+background-position: 0 0;
+width: 15px;
+height: 22px;
+padding-left: 20px;  /* width of the image plus a little extra padding */
+display: block;  /* may not need this, but I've found I do */
+float: left;
+margin: 0 5px 0 0;
+
+}
+p.phone:before{
+content: "";
+background-image: url('img/sprites.png');
+background-repeat: no-repeat;
+background-position: -21px -51px;
+width: 27px;
+height: 25px;
+padding-left: 12px;  /* width of the image plus a little extra padding */
+display: block;  /* may not need this, but I've found I do */
+float: left;
+margin: 0 5px 0 0;
+}
 /*----------------------------------
 6. Helper Classes
 -----------------------------------*/
