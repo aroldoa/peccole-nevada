@@ -94,7 +94,11 @@
 							<?php html5blank_nav();?>
 						</div>
 					</nav>
-					<div class="breadcrumbs">
-					</div>
 				</div>
+			</div>
+			<div class="breadcrumbs">
+			<?php 
+				if(function_exists('bcn_display')){
+			        bcn_display();
+			    } ?>
 			</div>
