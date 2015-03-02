@@ -9,7 +9,13 @@
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<div class="post-meta-wrapper">
+			<?php
+
+			if($post->post_type == 'locations'){
+				echo "<div class='post-meta-wrapper $post->post_name'>";
+			}else{
+				echo "<div class='post-meta-wrapper'>";
+			} ?>
 					<!-- post title -->
 					<h2 style="font-size:34px;">
 						<?php the_title(); ?>
@@ -17,7 +23,7 @@
 					<!-- /post title -->
 					<span class="location-address">
 					<?php
-						$address = get_post_meta( get_the_ID(), 'locations', true );
+						$address = get_post_meta( get_the_ID(), 'location-address', true );
 	 
 					    // Checks and displays the retrieved value
 					    if( !empty( $address ) ) {
