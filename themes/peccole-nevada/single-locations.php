@@ -23,11 +23,14 @@
 				</div>
 				<!-- /post details -->
 
-				<hr/>
-
 				<div role="tabpanel">
 				<!-- Nav tabs -->
-				   <ul class="nav nav-tabs container" role="tablist">
+				<?php
+				if($post->post_type == 'locations'){
+					echo "<ul class='nav nav-tabs container $post->post_name' role='tablist'>";
+				}else{
+					echo '<ul class="nav nav-tabs container non-locations" role="tablist">';
+				}?>
 				      <li role="presentation" class="active col-md-4"><a href="#property_images" aria-controls="property_images" role="tab" data-toggle="tab">Property Images</a></li>
 				      <li role="presentation" class="col-md-4"><a href="#tenants" aria-controls="tenants" role="tab" data-toggle="tab">Tenants</a></li>
 				      <li role="presentation" class="col-md-4"><a href="#property_management" aria-controls="property_management" role="tab" data-toggle="tab">Property Management</a></li>
