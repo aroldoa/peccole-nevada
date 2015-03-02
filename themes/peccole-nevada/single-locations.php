@@ -2,7 +2,7 @@
 <main role="main" class="band">
 	<div class="container">
 		<!-- section -->
-		<section class="col-sm-9 content">
+		<section class="content">
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -31,26 +31,21 @@
 					    }
 				    ?>
 					</span>
+					<div role="tabpanel">
+					<!-- Nav tabs -->
+					<?php
+					if($post->post_type == 'locations'){
+						echo "<ul class='nav nav-tabs container $post->post_name' role='tablist'>";
+					}else{
+						echo '<ul class="nav nav-tabs container non-locations" role="tablist">';
+					}?>
+					      <li role="presentation" class="active col-md-4"><a href="#property_images" aria-controls="property_images" role="tab" data-toggle="tab">Property Images</a></li>
+					      <li role="presentation" class="col-md-4"><a href="#tenants" aria-controls="tenants" role="tab" data-toggle="tab">Tenants</a></li>
+					      <li role="presentation" class="col-md-4"><a href="#property_management" aria-controls="property_management" role="tab" data-toggle="tab">Property Management</a></li>
+					   </ul>
+					</div>
 				</div>
-
-				<div role="tabpanel">
-				<!-- Nav tabs -->
-				<?php
-				if($post->post_type == 'locations'){
-					echo "<ul class='nav nav-tabs container $post->post_name' role='tablist'>";
-				}else{
-					echo '<ul class="nav nav-tabs container non-locations" role="tablist">';
-				}?>
-				      <li role="presentation" class="active col-md-4"><a href="#property_images" aria-controls="property_images" role="tab" data-toggle="tab">Property Images</a></li>
-				      <li role="presentation" class="col-md-4"><a href="#tenants" aria-controls="tenants" role="tab" data-toggle="tab">Tenants</a></li>
-				      <li role="presentation" class="col-md-4"><a href="#property_management" aria-controls="property_management" role="tab" data-toggle="tab">Property Management</a></li>
-				   </ul>
-					<?php the_content(); // Dynamic Content ?>
-				</div>
-
-				<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-
-				<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+				<?php the_content(); // Dynamic Content ?>
 
 				<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 
