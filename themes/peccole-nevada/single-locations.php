@@ -68,10 +68,6 @@
 
 		</section>
 
-		<div class="col-sm-3">
-			<?php get_sidebar(); ?>
-		</div>
-
 	<!-- /section -->
 	</div>
 </main>
