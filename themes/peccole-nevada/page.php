@@ -1,11 +1,13 @@
-<?php get_header(); ?>
-<main role="main" class="main">
-<?php
+<?php get_header();
 
 if( is_front_page() ){
-	echo '<div class="container-fluid content-wrapper">';
+	echo '
+		<main role="main" class="main">
+		<div class="container-fluid content-wrapper">';
 }else{
-	echo '<div class="container">';
+	echo '
+		<main role="main" class="sub-page">
+		<div class="container">';
 }?>
 <!-- section -->
 	<section class="content">
