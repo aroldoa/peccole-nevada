@@ -64,7 +64,7 @@ add_action( 'save_post', 'locations_meta_save' );
  */
 function locations_image_enqueue() {
     global $typenow;
-    if( $typenow == 'post' ) {
+    if( $typenow == 'locations' ) {
         wp_enqueue_media();
  
         // Registers and enqueues the required javascript.
