@@ -1,6 +1,6 @@
 		<?php
 			if($post->post_type == 'locations'){
-				echo '<section class="pre-footer $post->post_name">';
+				echo "<section class='pre-footer $post->post_name'>";
 			}else{
 				echo '<section class="pre-footer non-locations">';
 			}?>
