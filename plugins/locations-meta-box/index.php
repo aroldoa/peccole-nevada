@@ -24,9 +24,12 @@ function locations_meta_callback( $post ) {
     wp_nonce_field( basename( __FILE__ ), 'locations_nonce' );
     $locations_stored_meta = get_post_meta( $post->ID );
     ?>
-    
     <p>
-	    <label for="meta-image" class="locations-row-title"><?php _e( 'Example File Upload', 'locations-textdomain' )?></label>
+        <label for="location-address" class="locations-row-title"><?php _e( 'Address', 'locations-textdomain' )?></label>
+        <input type="text" name="location-address" id="location-address" value="<?php if ( isset ( $locations_stored_meta['location-address'] ) ) echo $locations_stored_meta['location-address'][0]; ?>" />
+    </p>
+    <p>
+	    <label for="meta-image" class="locations-row-title"><?php _e( 'Sub Header Image', 'locations-textdomain' )?></label>
 	    <input type="text" name="meta-image" id="meta-image" value="<?php if ( isset ( $locations_stored_meta['meta-image'] ) ) echo $locations_stored_meta['meta-image'][0]; ?>" /><br />
         <img src="<?php if ( isset ( $locations_stored_meta['meta-image'] ) ) echo $locations_stored_meta['meta-image'][0]; ?>" />
 	    <input type="button" id="meta-image-button" class="button" value="<?php _e( 'Choose or Upload an Image', 'locations-textdomain' )?>" />
@@ -49,7 +52,12 @@ function locations_meta_save( $post_id ) {
     if ( $is_autosave || $is_revision || !$is_valid_nonce ) {
         return;
     }
- 
+
+    // Checks for input and sanitizes/saves if needed
+    if( isset( $_POST[ 'location-address' ] ) ) {
+        update_post_meta( $post_id, 'location-address', sanitize_text_field( $_POST[ 'location-address' ] ) );
+    }
+
     // Checks for input and saves if needed
     if( isset( $_POST[ 'meta-image' ] ) ) {
         update_post_meta( $post_id, 'meta-image', $_POST[ 'meta-image' ] );
