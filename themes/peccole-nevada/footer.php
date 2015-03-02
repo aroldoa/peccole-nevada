@@ -1,7 +1,10 @@
 		<?php
-		var_dump(get_queried_object()); ?>
+			if($post->post_type == 'locations'){
+				echo '<section class="pre-footer $post->post_name">';
+			}else{
+				echo '<section class="pre-footer non-locations">';
+			}?>
 
-		<section class="pre-footer">
 			<div class="container">
 				<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('pre-footer')) ?>
 			</div>
