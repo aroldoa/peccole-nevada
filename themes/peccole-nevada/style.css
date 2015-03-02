@@ -50,6 +50,9 @@ html{
 	background-color: #00417b; 
 	min-height: 80px;
 }
+.sub-page{
+	padding:40px 0 0 0;
+}
 
 /*----------------------------------
 2. Header Elements
