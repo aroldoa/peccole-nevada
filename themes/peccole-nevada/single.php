@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main role="main" class="band">
+<main role="main" class="sub-page">
 
 <div class="container">
 	<!-- section -->
