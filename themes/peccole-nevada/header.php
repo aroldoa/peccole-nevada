@@ -77,7 +77,12 @@
 		    		<?php }?>
 		    		</div>
 			</header>
-			<div class="nav-wrapper">
+			<?php
+				if($post->post_type == 'locations'){
+					echo "<div class='nav-wrapper $post->post_name'>";
+				}else{
+					echo "<div class='nav-wrapper non-locations'>";
+				} ?>
 				<div class=" container">
 					<nav class="navbar navbar-default" role="navigation">
 						<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">

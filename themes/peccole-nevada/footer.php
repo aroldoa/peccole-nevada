@@ -9,23 +9,28 @@
 				<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('pre-footer')) ?>
 			</div>
 		</section>
-			<!-- footer -->
-			<footer class="band footer" role="contentinfo">
-				<div class="container">
-				<div class="col-lg-11">
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; Copyright <?php echo date('Y'); ?>  Peccole Nevada Corporation<br/>
-				</p>
-				</div><!-- /copyright -->
+		<!-- footer -->
+		<?php
+		if($post->post_type == 'locations'){
+			echo "<footer class='band footer $post->post_name' role='contentinfo'>";
+		}else{
+			echo "<footer class='band footer non-locations' role='contentinfo'>";
+		} ?>
+			<div class="container">
+			<div class="col-lg-11">
+			<!-- copyright -->
+			<p class="copyright">
+				&copy; Copyright <?php echo date('Y'); ?>  Peccole Nevada Corporation<br/>
+			</p>
+			</div><!-- /copyright -->
 
-				<div class="col-lg-1">
-					
-				</div>
+			<div class="col-lg-1">
+				
+			</div>
 
-				</div>
-			</footer>
-			<!-- /footer -->
+			</div>
+		</footer>
+		<!-- /footer -->
 
 		<?php wp_footer(); ?>
 
