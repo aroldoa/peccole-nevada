@@ -32,7 +32,8 @@ html{
 .header-wrapper-home{
 	min-height: 670px;
 }
-.header-wrapper-sub{
+.header-wrapper-sub,
+.sub-header{
 	min-height: 370px;
 }
 .header{
