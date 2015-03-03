@@ -10,7 +10,7 @@
  */
 get_header(); ?>
 <main role="main" class="blog">
-<section class="blog intro"><div style="background-image:url('<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?> ');min-height:inherit;background-size:cover;">
+<section class="blog intro">
 	<div class="container center">
 		<h1><?php the_title();?></h1>
 		<p><?php the_excerpt();?></p>
