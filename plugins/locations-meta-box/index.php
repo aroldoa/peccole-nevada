@@ -13,7 +13,7 @@ Version: 1.0
  * Adds a meta box to the post editing screen
  */
 function locations_custom_meta() {
-    add_meta_box( 'locations_meta', __( 'Sub Header Image', 'locations-textdomain' ), 'locations_meta_callback', 'locations' );
+    add_meta_box( 'locations_meta', __( 'Sub Header Image', 'locations-textdomain' ), 'locations_meta_callback', 'locations, pages' );
 }
 add_action( 'add_meta_boxes', 'locations_custom_meta' );
 
