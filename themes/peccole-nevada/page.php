@@ -25,6 +25,13 @@ if( is_front_page() ){
 		<?php endif; ?>
 	</section>
 <!-- /section -->
+	
+	<?php if( is_page('contact-us') ){
+		echo "<div>";
+		dynamic_sidebar( 'contact-us-sidebar' );
+		echo "</div>";
+	
+	}?>
 	</div><!-- /container -->
 
 <?php

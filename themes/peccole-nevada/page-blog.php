@@ -25,7 +25,7 @@ get_header(); ?>
 		<!-- /section -->
 
 	<div class="col-sm-3">
-		<?php get_sidebar(); ?>
+		<?php  dynamic_sidebar( 'posts-sidebar' ); ?>
 	</div>
 
 	</div>
