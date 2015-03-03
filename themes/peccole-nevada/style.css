@@ -204,16 +204,16 @@ h3.uus-post-title{
 	}
 .locations-box h4.entry-title:before{
 
-content: "";
-background-image: url('img/sprites.png');
-background-repeat: no-repeat;
-background-position: -21px 0px;
-width: 20px;
-height: 26px;
-padding-left: 0px;  /* width of the image plus a little extra padding */
-display: block;  /* may not need this, but I've found I do */
-float: left;
-margin: 0 0px 0 0;
+	content: "";
+	background-image: url('img/sprites.png');
+	background-repeat: no-repeat;
+	background-position: -21px 0px;
+	width: 20px;
+	height: 26px;
+	padding-left: 0px;  /* width of the image plus a little extra padding */
+	display: block;  /* may not need this, but I've found I do */
+	float: left;
+	margin: 0 0px 0 0;
 
 }
 
@@ -249,6 +249,19 @@ ul.nav-tabs{text-align: center; margin-bottom: 50px; margin-top:60px;}
 .blog article{margin-bottom: 50px;}
 
 main .sir-williams-district{background-image: url('img/sir-william-backdrop.png'); background-repeat: no-repeat; background-position: 0 0; }
+
+.about-us-box-wrapper{
+	background-image: url('img/lobby-test.jpg');
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center;
+}
+.about-us-box{
+	background-color: #00529b;
+	width:50%;
+	opacity:.75;
+	min-height: 500px;
+}
 
 /*----------------------------------
 5. Font Elements
