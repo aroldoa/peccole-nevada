@@ -244,24 +244,24 @@ if (function_exists('register_sidebar'))
     // Define Sidebar Widget Area
     register_sidebar(array(
         'name'          => __( 'Posts Sidebar', 'html5blank' ),
-        'id'            => 'posts-sidebar-id',
+        'id'            => 'posts-sidebar',
         'description'   => 'posts sidebar for news',
         'class'         => 'posts-sidebar',
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
         'after_widget'  => '</li>',
         'before_title'  => '<h2 class="widgettitle">',
-        'after_title'   => '</h2>' );
+        'after_title'   => '</h2>'
     ));
 // Define Sidebar Widget Area
     register_sidebar(array(
         'name'          => __( 'Contact us sidebar', 'html5blank' ),
-        'id'            => 'contact-us-sidebar-id',
+        'id'            => 'contact-us-sidebar',
         'description'   => 'contact us sidebar',
         'class'         => 'contact-us-sidebar',
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
         'after_widget'  => '</li>',
         'before_title'  => '<h2 class="widgettitle">',
-        'after_title'   => '</h2>' );
+        'after_title'   => '</h2>'
     ));
 }
 
