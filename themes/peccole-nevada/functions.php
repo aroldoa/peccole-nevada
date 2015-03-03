@@ -116,40 +116,5 @@ function create_post_type_sliders()
     ));
 }
 
-//deactivate WordPress function
-remove_shortcode('gallery', 'gallery_shortcode');
-
-//activate own function
-add_shortcode('gallery', 'wpe_gallery_shortcode');
-
-//the own renamed function
-function wpe_gallery_shortcode($attr) {
-    $output = apply_filters('gallery_style', "
-        <div id='$selector' class='gallery galleryid-{$id}'>");
-
-    $i = 0;
-    foreach ( $attachments as $id => $attachment ) {
-        $link = isset($attr['link']) && 'file' == $attr['link'] ? wp_get_attachment_link($id, $size, false, false) : wp_get_attachment_link($id, $size, true, false);
-
-        $output .= "<{$itemtag} class='gallery-item'>";
-        $output .= "
-            <{$icontag} class='gallery-icon'>
-                $link
-            </{$icontag}>";
-        if ( $captiontag && trim($attachment->post_excerpt) ) {
-            $output .= "
-                <{$captiontag} class='gallery-caption'>
-                " . wptexturize($attachment->post_excerpt) . "
-                </{$captiontag}>";
-        }
-        $output .= "</{$itemtag}>";
-        if ( $columns > 0 && ++$i % $columns == 0 )
-            $output .= '<br />';
-    }
-
-    $output .= "</div>";
-
-    return $output;    
-}
 
 ?>
