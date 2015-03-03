@@ -44,6 +44,9 @@ if( is_front_page()){
 			if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('locations-box'));				
 	echo '</div>
 		</div>';
+}elseif(is_page('about-us')){
+	get_template_part('about-us', 'part' );
+
 }
 ?>
 </main>
