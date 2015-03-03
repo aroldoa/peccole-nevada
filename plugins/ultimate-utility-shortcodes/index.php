@@ -57,7 +57,7 @@ function uus_gridtype($gridtype, $post, $numcols, $maxcols, $img_attr, $imgsize,
 		$src = "src='" . $imgurl[0] . " ' ";
 	}
 
-	if(( $i % ($numcols+1) == 0 ) || ($i == 1) ){
+	if( ($i-1) % $numcols == 0  ){
 		$output .= "<div class='row'>";
 	}
 
