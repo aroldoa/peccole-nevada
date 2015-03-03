@@ -10,7 +10,12 @@ if( is_front_page() ){
 		<div class="container">';
 }?>
 <!-- section -->
-	<section class="content">
+	<?php
+		if( is_page('contact-us') ){
+			echo '<section class="col-sm-9 content">';
+		}else{
+			echo '<section class="content">';
+		}?>
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 			<?php the_content(); ?>
 			<?php comments_template( '', true ); // Remove if you don't want comments ?>
@@ -27,7 +32,7 @@ if( is_front_page() ){
 <!-- /section -->
 	
 	<?php if( is_page('contact-us') ){
-		echo "<div>";
+		echo '<div class="col-sm-3">';
 		dynamic_sidebar( 'contact-us-sidebar' );
 		echo "</div>";
 	
