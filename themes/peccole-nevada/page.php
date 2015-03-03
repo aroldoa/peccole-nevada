@@ -4,11 +4,15 @@ if( is_front_page() ){
 	echo '
 		<main role="main" class="main">
 		<div class="container-fluid content-wrapper">';
+}elseif(is_page('developments')){
+	echo '
+		<main role="main" class="sub-page">
+		<div class="container-fluid">';
 }else{
 	echo '
 		<main role="main" class="sub-page">
 		<div class="container">';
-}?>
+	}?>
 <!-- section -->
 	<?php
 		if( is_page('contact-us') ){

@@ -71,11 +71,22 @@
 			    	<a href='#' class='unslider-arrow prev'>Previous slide</a>
 			    	<a href='#' class='unslider-arrow next'>Next slide</a>
 		    	</div>
-		    	<?php }else{ 
+		    	<?php }elseif( is_page() ){ 
 		    		$locations_stored_meta = get_post_meta( $post->ID ); ?>
 		    		<div class="sub-header" style="background-image:url(<?php if ( isset ( $locations_stored_meta['meta-image'] ) ) echo $locations_stored_meta['meta-image'][0]; ?> ); background-size:cover; background-position:center;">
-		    		<?php }?>
 		    		</div>
+		    		<?php }elseif( is_single() ){
+		    			$cat_haystack = array('news','events');
+		    			$categories = get_the_category($post->ID);
+		    			foreach ($categories as $category) {
+		    				if( in_array($category->category_nicename, $cat_haystack)){
+		    					$locations_stored_meta = get_post_meta( '45' );?>
+		    					<div class="sub-header" style="background-image:url(<?php if ( isset ( $locations_stored_meta['meta-image'] ) ) echo $locations_stored_meta['meta-image'][0]; ?> ); background-size:cover; background-position:center;">
+		    					</div>
+		    				<? break;}
+		    			}
+
+		    		 } ?>
 			</header>
 			<?php
 				if($post->post_type == 'locations'){
