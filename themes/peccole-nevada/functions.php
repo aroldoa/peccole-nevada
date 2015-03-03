@@ -116,4 +116,9 @@ function create_post_type_sliders()
     ));
 }
 
+function my_image_class_filter($classes) {
+    return $classes . ' img-responsive';
+}
+add_filter('get_image_tag_class', 'my_image_class_filter');
+
 ?>
