@@ -55,7 +55,13 @@
 	</section>
 
 	<div class="col-sm-3">
-		<?php get_sidebar(); ?>
+		<?php
+			if( is_single() ){
+				global $post;
+				$parents = get_post_ancestors( $post->ID );
+				var_dump($parents);
+			}
+		get_sidebar(); ?>
 	</div>
 
 	<!-- /section -->

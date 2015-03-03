@@ -12,7 +12,7 @@ if( is_front_page() ){
 <!-- section -->
 	<?php
 		if( is_page('contact-us') ){
-			echo '<section class="col-sm-8 content">';
+			echo '<section class="col-sm-9 content">';
 		}else{
 			echo '<section class="content">';
 		}?>
@@ -32,7 +32,7 @@ if( is_front_page() ){
 <!-- /section -->
 	
 	<?php if( is_page('contact-us') ){
-		echo '<div class="col-sm-4">';
+		echo '<div class="col-sm-3">';
 		dynamic_sidebar( 'contact-us-sidebar' );
 		echo "</div>";
 	
