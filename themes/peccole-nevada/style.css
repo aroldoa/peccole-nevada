@@ -34,7 +34,7 @@ html{
 }
 .header-wrapper-sub,
 .sub-header{
-	min-height: 370px;
+	min-height: 450px;
 }
 .header{
 	width:100%;
@@ -51,8 +51,11 @@ html{
 	min-height: 80px;
 }
 .sub-page{
-	padding:70px 0 0 0;
+	padding:70px 0 70px 0;
+	
 }
+
+
 
 /*----------------------------------
 2. Header Elements
@@ -95,12 +98,13 @@ nav.navbar-default ul{
 }
 nav.navbar-default ul li{
 	/*padding:0px 20px;*/
+	font-size: 16px;
 }
 nav.navbar-default ul li a{
 	color:#fff !important;
 }
 ul.nav>li>a{
-	padding:35px 15px;
+	padding:30px 15px;
 }
 ul.nav>li>a:focus,
 .current-menu-item,
@@ -119,13 +123,27 @@ ul.nav>li>a:hover{
 
 .intro{
 	text-align: center; 
-	padding:95px 30px; 
+	padding:65px 0px 120px 0px; 
 	background-color: #e7edf3; 
 	background-image: url('img/intro-background.jpg'); 
 	background-repeat: no-repeat; 
 	background-size: cover; 
 	background-position: center;
 }
+
+
+.subintro{
+	text-align: center; 
+	padding:65px 0px 120px 0px; 
+	background-color: #e7edf3; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center;
+}
+
+.subintro pre{background: none; border:none; font-family: sans-serif; font-size: 14px !important; margin-bottom: 0px !important; padding:0px !important; color:#00529b;letter-spacing: 1px; }
+
+
 .main .content-wrapper{
 	padding:0;
 }
@@ -213,9 +231,24 @@ ul#social li a#twitter:hover{width: 44px;background: url('img/sprites.png') -169
 ul#social li a#google{width: 43px;background: url('img/sprites.png') -225px 0px;}
 ul#social li a#google:hover{width: 43px;background: url('img/sprites.png') -225px -44px;}
 
-.breadcrumbs{clear:both;background-color: #e7edf3;}
+.breadcrumbs{clear:both;background-color: #e7edf3; padding: 30px 0px;}
 
+.post-meta-wrapper h1{text-align: center; margin-bottom: 10px;	font-family: "kepler-std-subhead",serif;
+	font-size: 42px !important; color: #00529b;}
+ul.nav-tabs{text-align: center; margin-bottom: 50px; margin-top:60px;}
+.post-meta-wrapper{text-align: center !important;}
+.post-meta-wrapper span.location-address{color:#464541; font-size: 16px; letter-spacing: 1px;}
 
+.sub-page h1{font-family: "kepler-std-subhead",serif;font-size: 42px !important; color: #00529b; margin-bottom: 20px;}
+.sub-page h2{ font-family: sans-serif; font-size: 28px; margin: 0px 0px 15px 0px; font-weight: lighter;}
+.sub-page p{font-size: 16px; line-height: 28px; margin-bottom: 35px;}
+.uus-post-button:hover{background-color: #fff; color:#00529b; text-decoration: none;}
+.format-standard h2 {font-size: 28px; margin: 0px 0px 15px 0px; font-weight: lighter; color: #00529b;}
+.format-standard h2 a{color: #00529b;}
+.format-standard .post-details{margin-bottom: 12px; color: #222; font-weight: bold;}
+.blog article{margin-bottom: 50px;}
+
+main .sir-williams-district{background-image: url('img/sir-william-backdrop.png'); background-repeat: no-repeat; background-position: 0 0; }
 
 /*----------------------------------
 5. Font Elements
@@ -227,6 +260,7 @@ ul#social li a#google:hover{width: 43px;background: url('img/sprites.png') -225p
 	background: none; 
 	border:none; 
 	color:#00529b;
+	 font-family: sans-serif; font-size: 14px !important; margin-bottom: 0px !important; padding-top: 0px; color:#00529b;letter-spacing: 1px;
 }
 .intro h1{
 	margin: 0px 0px 45px 0px; 
@@ -256,6 +290,7 @@ ul#social li a#google:hover{width: 43px;background: url('img/sprites.png') -225p
 	font-size: 42px;
 	color:#00529b;
 }
+
 
 .locations-box-wrapper h3{
 
@@ -319,8 +354,20 @@ margin: 0 5px 0 0;
 	opacity: 1;
 }
 
+
 /*----------------------------------
-7. Media Queries
+7. Form Classes
+-----------------------------------*/
+
+#wpcf7-f100-p47-o1 p{font-size: 15px; color:#727272;}
+#wpcf7-f100-p47-o1 input{width: 100%; border:1px solid #00529b; padding: 12px 10px;}
+#wpcf7-f100-p47-o1 .wpcf7-submit{background-color: #00529b; color: #fff; width: 300px; border: none}
+#wpcf7-f100-p47-o1 .wpcf7-submit:hover{background-color: #1682e0; border: none;}
+#wpcf7-f100-p47-o1 textarea{width: 100%; border:1px solid #00529b; padding: 5px 2px;}
+
+
+/*----------------------------------
+8. Media Queries
 -----------------------------------*/
 
 /* Large desktop */
