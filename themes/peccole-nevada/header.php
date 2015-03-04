@@ -71,28 +71,19 @@
 			    	<a href='#' class='unslider-arrow prev'>Previous slide</a>
 			    	<a href='#' class='unslider-arrow next'>Next slide</a>
 		    	</div>
-		    	<?php }elseif( is_page() ){ 
+		    	<?php }else{ 
 		    		$locations_stored_meta = get_post_meta( $post->ID ); ?>
 		    		<div class="sub-header" style="background-image:url(<?php if ( isset ( $locations_stored_meta['meta-image'] ) ) echo $locations_stored_meta['meta-image'][0]; ?> ); background-size:cover; background-position:center;">
+		    		<?php }?>
 		    		</div>
-		    		<?php }elseif( is_single() ){
-		    			$cat_haystack = array('news','events');
-		    			$categories = get_the_category($post->ID);
-		    			foreach ($categories as $category) {
-		    				if( in_array($category->category_nicename, $cat_haystack)){
-		    					$locations_stored_meta = get_post_meta( '45' );?>
-		    					<div class="sub-header" style="background-image:url(<?php if ( isset ( $locations_stored_meta['meta-image'] ) ) echo $locations_stored_meta['meta-image'][0]; ?> ); background-size:cover; background-position:center;">
-		    					</div>
-		    				<? break;}
-		    			}
-
-		    		 } ?>
 			</header>
 			<?php
-				if($post->post_type == 'locations'){
-					echo "<div class='nav-wrapper $post->post_name'>";
+				if( is_front_page() ){
+					echo "<div id='home' class='nav-wrapper non-locations'>";
+				}elseif($post->post_type == 'locations'){
+					echo "<div id='subpage' class='nav-wrapper $post->post_name'>";
 				}else{
-					echo "<div class='nav-wrapper non-locations'>";
+					echo "<div id='subpage' class='nav-wrapper non-locations'>";
 				} ?>
 				<div class=" container">
 					<nav class="navbar navbar-default" role="navigation">
@@ -107,6 +98,7 @@
 					</nav>
 				</div>
 			</div>
+			<div id="nav-replace"></div>
 			<div class="breadcrumbs">
 				<div class="container">
 				<?php 
