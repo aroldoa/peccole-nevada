@@ -20,7 +20,7 @@
 
         <?php $current_post = ($post->ID == $current_post_id && is_single()) ? 'active' : ''; ?>
 
-        <?php if (($i % 4 == 0) || ($i == 1)){
+        <?php if (($i % 5 == 0) || ($i == 1)){
           echo "<div class='col-lg-6 col-md-6 col-sm-6'>";
         }?>
 
@@ -146,7 +146,7 @@
           </footer>
 
         </article>
-        <?php if (($j % 3 == 0)){
+        <?php if (($j % 4 == 0)){
           echo "</div>";
         }
         $i++;$j++;?>
