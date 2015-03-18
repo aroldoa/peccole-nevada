@@ -7,11 +7,11 @@ if( is_front_page() ){
 }elseif(is_page('developments')){
 	echo '
 		<main role="main" class="sub-page">
-		<div class="container-fluid">';
+		<div class="container-fluid content-wrapper">';
 }else{
 	echo '
 		<main role="main" class="sub-page">
-		<div class="container">';
+		<div class="container content-wrapper">';
 	}?>
 <!-- section -->
 	<?php

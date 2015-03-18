@@ -144,7 +144,8 @@ ul.nav>li>a:hover{
 .subintro pre{background: none; border:none; font-family: sans-serif; font-size: 14px !important; margin-bottom: 0px !important; padding:0px !important; color:#00529b;letter-spacing: 1px; }
 
 
-.main .content-wrapper{
+.main .content-wrapper,
+.sub-page .content-wrapper{
 	padding:0;
 }
 
