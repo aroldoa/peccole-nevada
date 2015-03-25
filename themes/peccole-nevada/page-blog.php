@@ -9,13 +9,7 @@
  *
  */
 get_header(); ?>
-<main role="main" class="blog">
-<section class="blog intro">
-	<div class="container center">
-		<h1><?php the_title();?></h1>
-		<p><?php the_excerpt();?></p>
-	</div></div>
-</section><div class="blog end-intro"></div>
+<main role="main" class="blog sub-page">
 <div class="container">
 		<!-- section -->
 	<section class="col-sm-9 content">

@@ -72,18 +72,23 @@
 			    	<a href='#' class='unslider-arrow next'>Next slide</a>
 		    	</div>
 		    	<?php }else{ 
-		    		$locations_stored_meta = get_post_meta( $post->ID ); ?>
-		    		<div class="sub-header" style="background-image:url(<?php if ( isset ( $locations_stored_meta['meta-image'] ) ) echo $locations_stored_meta['meta-image'][0]; ?> ); background-size:cover; background-position:center;">
-		    		<?php }?>
+		    		if (is_archive('developments')){ ?>
+		    			<div class="sub-header" style="background-image:url('http://staging.primomotif.com/peccole/wp-content/uploads/2015/02/developments-banner4.jpg'); background-size:cover; background-position:center;">
+		    		<? }else{
+			    		$developments_stored_meta = get_post_meta( $post->ID );?>
+			    		<div class="sub-header" style="background-image:url(<?php if ( isset ( $developments_stored_meta['meta-image'] ) ) echo $developments_stored_meta['meta-image'][0]; ?> ); background-size:cover; background-position:center;">
+		    		<?php 
+		    		}
+		    		}?>
 		    		</div>
 			</header>
 			<?php
 				if( is_front_page() ){
-					echo "<div id='home' class='nav-wrapper non-locations'>";
-				}elseif($post->post_type == 'locations'){
+					echo "<div id='home' class='nav-wrapper non-developments'>";
+				}elseif($post->post_type == 'developments'){
 					echo "<div id='subpage' class='nav-wrapper $post->post_name'>";
 				}else{
-					echo "<div id='subpage' class='nav-wrapper non-locations'>";
+					echo "<div id='subpage' class='nav-wrapper non-developments'>";
 				} ?>
 				<div class=" container">
 					<nav class="navbar navbar-default" role="navigation">

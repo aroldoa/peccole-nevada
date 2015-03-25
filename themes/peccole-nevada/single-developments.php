@@ -11,7 +11,7 @@
 
 			<?php
 
-			if($post->post_type == 'locations'){
+			if($post->post_type == 'developments'){
 				echo "<div class='post-meta-wrapper $post->post_name'>";
 			}else{
 				echo "<div class='post-meta-wrapper'>";
@@ -21,9 +21,9 @@
 						<?php the_title(); ?>
 					</h1>
 					<!-- /post title -->
-					<span class="location-address">
+					<span class="development-address">
 					<?php
-						$address = get_post_meta( get_the_ID(), 'location-address', true );
+						$address = get_post_meta( get_the_ID(), 'development-address', true );
 	 
 					    // Checks and displays the retrieved value
 					    if( !empty( $address ) ) {
@@ -34,10 +34,10 @@
 					<div role="tabpanel">
 					<!-- Nav tabs -->
 					<?php
-					if($post->post_type == 'locations'){
+					if($post->post_type == 'developments'){
 						echo "<ul class='nav nav-tabs container $post->post_name' role='tablist'>";
 					}else{
-						echo '<ul class="nav nav-tabs container non-locations" role="tablist">';
+						echo '<ul class="nav nav-tabs container non-developments" role="tablist">';
 					}?>
 					      <li role="presentation" class="active col-md-4"><a href="#property_images" aria-controls="property_images" role="tab" data-toggle="tab">Property Images</a></li>
 					      <li role="presentation" class="col-md-4"><a href="#tenants" aria-controls="tenants" role="tab" data-toggle="tab">Tenants</a></li>

@@ -25,7 +25,9 @@
 			</div><!-- /copyright -->
 
 			<div class="col-lg-1">
-				
+				<div class="primo">
+					<a href="http://www.primomotif.com">&nbsp;</a>
+				</div>
 			</div>
 
 			</div>

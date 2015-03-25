@@ -24,6 +24,7 @@ add_action( 'wp_enqueue_scripts', 'peccole_styles' );
 
 add_action('init', 'create_post_type_locations'); // Add Testimonial Post Type
 add_action('init', 'create_post_type_sliders'); // Add Testimonial Post Type
+add_action('init', 'create_post_type_developments'); // Add Testimonial Post Type
 
 //inline js at footer
 function footer_js(){?>
@@ -61,7 +62,7 @@ function create_post_type_locations()
             'not_found' => __('No Location found', 'html5blank'),
             'not_found_in_trash' => __('No Location found in Trash', 'html5blank')
         ),
-        'rewrite' => array('slug' => 'developments'),
+        'rewrite' => array('slug' => 'locations'),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
         'has_archive' => true,
@@ -71,13 +72,15 @@ function create_post_type_locations()
             'excerpt',
             'thumbnail'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
-        'can_export' => true, // Allows export in Tools > Export
-        'taxonomies' => array(
-            'post_tag',
-            'category'
-        ) // Add Category and Post Tags support
+        'can_export' => true // Allows export in Tools > Export
+        // 'taxonomies' => array(
+        //     'post_tag',
+        //     'category'
+        // ) // Add Category and Post Tags support
     ));
 }
+
+
 
 // Create 1 Custom Post type for developments
 function create_post_type_developments()

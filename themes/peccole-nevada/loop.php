@@ -24,7 +24,6 @@ $get_resources = new WP_Query( $args ); ?>
 		<!-- post details -->
 		<div class="post-details">
 		<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-		<span class="author"><?php _e( 'by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
 		<!-- /post details -->
 		</div>
 				<!-- post thumbnail -->
