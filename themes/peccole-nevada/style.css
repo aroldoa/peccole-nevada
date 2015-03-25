@@ -243,6 +243,9 @@ ul.nav-tabs{text-align: center; margin-bottom: 50px; margin-top:60px;}
 .sub-page h1{font-family: "kepler-std-subhead",serif;font-size: 42px !important; color: #00529b; margin-bottom: 20px;}
 .sub-page h2{ font-family: sans-serif; font-size: 28px; margin: 0px 0px 15px 0px; font-weight: lighter;}
 .sub-page p{font-size: 16px; line-height: 28px; margin-bottom: 35px;}
+#tenants p{
+	text-align: center;
+}
 .uus-post-button:hover{background-color: #fff; color:#00529b; text-decoration: none;}
 .format-standard h2 {font-size: 28px; margin: 0px 0px 15px 0px; font-weight: lighter; color: #00529b;}
 .format-standard h2 a{color: #00529b;}
